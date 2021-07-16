@@ -45,19 +45,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         UIView.animate(withDuration: 0.8) {
             switch distance {
             case .far:
-                self.view.backgroundColor = UIColor.blue
+                self.view.backgroundColor = .blue
                 self.distanceReading.text = "FAR"
 
             case .near:
-                self.view.backgroundColor = UIColor.orange
+                self.view.backgroundColor = .orange
                 self.distanceReading.text = "NEAR"
 
             case .immediate:
-                self.view.backgroundColor = UIColor.red
+                self.view.backgroundColor = .red
                 self.distanceReading.text = "RIGHT HERE"
 
             default:
-                self.view.backgroundColor = UIColor.gray
+                self.view.backgroundColor = .gray
                 self.distanceReading.text = "UNKNOWN"
             }
         }
